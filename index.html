@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+    <title>Week 06 - Homework 2: Interactive Glossary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>Interactive Glossary</h1></header>
+    <main>
+        <form>
+            <div class="filter-container">
+                <label for="class">
+                    <select name="class" id="select-class"><option value="all">All</option></select>
+                </label>
+<!--                 <label for="tags">
+                    <select id="select-tag"><option value="all">All</option></select>
+                </label> -->
+                <div name="tags" id="select-tags"></div>
+            </div>
+            <label for="search">
+                <input type="text" id="search-input" name="search" placeholder="Start your search here">
+            </label>
+            <button id="search-btn" type="button">Search</button>
+        </form>
+        <hr>
+        <div id="search-result-container">
+            <p></p>
+        </div>
+
+    </main>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
